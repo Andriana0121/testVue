@@ -16,17 +16,19 @@
     </div>
     <div id="app2">
      <h3>In ce limbaj programati?</h3>
-      <input type="radio" name="limbaj" v-model="JS">
-      <label for="one">Javascript</label><br>
-      <input type="radio" name="limbaj" v-model="Python" >
-      <label for="one">Python</label><br>
-      <input type="radio" name="limbaj" v-model="Java">
-      <label for="one">Java</label><br>
+     <label for="limbaj">Java</label>
+     <input name="JavaScript" type="radio"  id="Java"  v-model="salariu" ><br>
+     <label for="limbaj">JavaScript</label>
+     <input name="limbaj" type="radio"  id="JavaScript"  v-model="salariu"><br>
+     <label for="limbaj">Python</label>
+     <input name="limbaj" type="radio"  id="Python"  v-model="salariu">
+     <br>
       <label>Experienta?</label>
-      <input type="text" v-model="Experienta">
+      <input type="number" v-model="Experienta">
       <label>ani</label><br>
-      <label>Salariu: </label>
-      {{ salariu }}
+      <h3>Salariu: $ {{ salariu }}</h3>
+      
+      
       
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
