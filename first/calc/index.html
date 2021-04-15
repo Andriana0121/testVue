@@ -14,22 +14,22 @@
         <input type="date" class="form-control" v-model="birthdate">
         {{ age }}
     </div>
-    <div id="app2">
-     <h3>In ce limbaj programati?</h3>
-     <label for="limbaj">Java</label>
-     <input name="limbaj" type="radio"  id="Java"  v-model="salariu" ><br>
-     <label for="limbaj">JavaScript</label>
-     <input name="limbaj" type="radio"  id="JavaScript"  v-model="salariu"><br>
-     <label for="limbaj">Python</label>
-     <input name="limbaj" type="radio"  id="Python"  v-model="salariu">
-     <br>
-      <label>Experienta?</label>
-      <input type="number" v-model="Experienta">
-      <label>ani</label><br>
-      <h3>Salariu: $ {{ salariu }}</h3>
-      
-      
-      
+    <div id="app3">
+        <h4>In ce limbaj programati?</h4>
+        <input type="radio" v-model="language" value="js">
+        <label for="one">Javascript</label>
+        <br>
+        <input type="radio" v-model="language" value="python">
+        <label for="one">Python</label>
+        <br>
+        <input type="radio" v-model="language" value="java">
+        <label for="one">Java</label>
+        <br>
+        <label>Experienta:</label>
+        <input type="text" v-model.number="experience">
+        <label>ani</label><br>
+        <label>Salariu: </label>
+            {{salary}}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="app.js"></script>
