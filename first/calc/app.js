@@ -17,7 +17,7 @@ const app1 = new Vue({
     }
 })
 const app2= new Vue({
-    el: '#app3',
+    el: '#app2',
     data: {
        limbaj:{
             JS: 1,
