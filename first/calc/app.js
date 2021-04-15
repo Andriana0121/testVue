@@ -16,26 +16,27 @@ const app1 = new Vue({
         }
     }
 })
-const app2= new Vue({
-    el: '#app2',
+const app3 = new Vue({
+    el: '#app3',
     data: {
-       limbaj:{
-            JS: 1,
-            Python: 0.7,
-            Java: 1.3
-            },
-        Experienta: {
-                1: 10000,
-                2: 12000,
-                3: 13500,
-                4: 14000,
-                5: 15000
-            },
-        //salariu: null
+      coef: {
+        'js': 1,
+        'python': 0.7,
+        'java': 1.3
+      },
+      experienceWork: {
+        1: 10000,
+        2: 12000,
+        3: 13500,
+        4: 14000,
+        5: 15000
+      },
+      language: 'js',
+      experience: 1,
     },
     computed: {
-        salariu(){
-            return this.coeficient*this.experience;
-        }
-    },
-})
+      salary() {
+        return this.experienceWork[this.experience] * this.coef[this.language];
+      }
+    }
+  });
