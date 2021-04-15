@@ -34,6 +34,7 @@ const app3 = new Vue({
       language: 'js',
       experience: 1,
     },
+    
     computed: {
       salary() {
         return this.experienceWork[this.experience] * this.coef[this.language];
